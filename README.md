@@ -46,7 +46,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new VueLoaderOptionPlugin({
+    new VueLoaderOptionsPlugin({
       babel: { // options for babel-loader, if you don't want `.babelrc`
         presets: ['es2015', 'stage-2'],
         plugins: ['transform-runtime', 'transform-object-rest-spread']
@@ -62,7 +62,6 @@ module.exports = {
     // .. other plugins
   ]
 }
-
 ```
 
 ## Options
