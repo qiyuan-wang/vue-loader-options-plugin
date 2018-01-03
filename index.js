@@ -21,7 +21,7 @@ class VueLoaderOptionPlugin {
         }
 
         module.loaders.forEach(l => {
-          if (l.loader.indexOf(loaderOption.loader) >= 0 && !l.options) {
+          if (l.loader.indexOf(loaderOption.loader) >= 0) {
             if (loaderOption.options.toContext) {
               context[loaderOption.loaderName] = loaderOption.options
             } else {
